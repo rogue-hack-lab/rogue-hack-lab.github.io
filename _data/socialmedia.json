@@ -1,0 +1,45 @@
+[
+	{
+		"name":"Meetup.com",
+		"url":"http://www.meetup.com/Rogue-Hack-Lab"
+	},
+	{
+		"name":"Github",
+		"url":"https://www.github.com/rogue-hack-lab",
+		"icon":"icon-g-github icon-g-white"
+	},
+	{
+		"name":"YouTube",
+		"url":"https://www.youtube.com/roguehack",
+		"icon":"icon-g-youtube icon-g-white"
+	},
+	{
+		"name":"Twitter",
+		"url":"https://www.twitter.com/roguehacklab",
+		"icon":"icon-g-twitter icon-g-white"
+	},
+	{
+		"name":"Facebook",
+		"url":"https://www.facebook.com/roguehacklab",
+		"icon":"icon-g-facebook icon-g-white"
+	},
+	{
+		"name":"Google Plus",
+		"url":"https://plus.google.com/+Roguehacklab/posts",
+		"icon":"icon-g-google-plus icon-g-white"
+	},
+	{
+		"name":"Tumblr",
+		"url":"http://roguehacklab.tumblr.com",
+		"icon":"icon-g-tumblr icon-g-white"
+	},
+	{
+		"name":"Instagram",
+		"url":"http://instagram.com/roguehacklab",
+		"icon":"icon-g-tumblr icon-g-white"
+	},
+	{
+		"name":"Google Group",
+		"url":"https://groups.google.com/forum/#!forum/rogue-hack-lab"
+	}
+]
