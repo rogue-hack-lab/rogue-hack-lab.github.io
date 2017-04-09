@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      {% include hero.html %}
+      <section id="about">
+        {% include about.html %}
+      </section>
+      <section id="projects">
+        {% include projects.html %}
+      </section>
+      <section id="meetup">
+        {% include meetup.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
+  </body>

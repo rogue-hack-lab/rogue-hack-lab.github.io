@@ -13,8 +13,28 @@ twitter_username: lorem_ipsum
 github_username:  lorem_ipsum
 gplus_username:  lorem_ipsum
 
+# templating defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+# page type organization folders
+collections:
+  pages: 
+    output: true
+  posts:
+    output: true
+  projects:
+    output: true
+  
+
 # Google-analytics
 google-analytics:
   id: "UA-50519192-2"
 
-exclude: ['package.json', 'src' , 'node_modules']
+# don't replicate these files in _site on build
+exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js']
