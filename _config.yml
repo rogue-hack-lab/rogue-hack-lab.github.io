@@ -37,7 +37,7 @@ google-analytics:
   id: "UA-50519192-2"
 
 # don't replicate these files in _site on build
-exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js', 'README.md']
+exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js', 'README.md', 'LICENSE.txt']
 
 # markdown formatting
 excerpt_separator: <!--more-->
