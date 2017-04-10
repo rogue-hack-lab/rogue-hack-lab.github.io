@@ -1,7 +1,6 @@
 <div class="container">
-  test {{ include.all }}
   <div class="user-details">
-    <h3><a href="{{ '/pages/project-toc.html' | prepend: site.baseurl }}">Featured Member Projects</a></h3>
+    <h3>Featured Member Projects</h3>
   </div>
   {% for project in site.projects %}
     {% if project.featured == true or include.all == true %}
@@ -30,4 +29,7 @@
       </div>
     {% endif %}
   {% endfor %}
+  {% if include.all == false %}
+    <p><a href="{{  '/pages/project-toc.html' | prepend: site.baseurl }}">View all projects</a></p>
+  {% endif %}
 </div>

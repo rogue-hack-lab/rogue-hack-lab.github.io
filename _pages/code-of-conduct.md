@@ -3,8 +3,6 @@ layout: page
 title: Code of Conduct
 permalink: code-of-conduct.html
 ---
-# CODE OF CONDUCT
-
 Respect gets respect.
 
 Like most hackerspace and makerspace communities, members generally believe that the purpose of coming together is to learn through doing (aka "do-ocracy") and sharing without judgement or prejudice, and to treat each other with dignity and respect.
