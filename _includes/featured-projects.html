@@ -4,7 +4,7 @@
     <h3><a href="{{ '/pages/project-toc.html' | prepend: site.baseurl }}">Featured Member Projects</a></h3>
   </div>
   {% for project in site.projects %}
-    {% if project.featured == true or include.includeAll == true %}
+    {% if project.featured == true or include.all == true %}
       <div class="row user-projects">
         <div class="six columns images">
           <img alt="mountains" src="{{ '/assets/img/mountains.jpg' | prepend: site.baseurl }}" />
