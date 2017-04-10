@@ -1,19 +1,17 @@
 # New RHL Website
 
-## Basic Local Setup
+This is the future RHL Website.
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Particle Theme](https://github.com/nrandecker/particle/fork)
-3. Clone the repo you just forked.
-4. Edit `_config.yml` to personalize your site.
-
-## Running the blog in local
+## Running the site locally
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
+- Install [Jekyll](http://jekyllrb.com)
 - Install [NodeJS](https://nodejs.org/)
 - Run `npm install`
 - Run `gulp`
+
+To edit css/js edit the files in `src` that are compiled with `gulp`.
 
 
 ## Credits
