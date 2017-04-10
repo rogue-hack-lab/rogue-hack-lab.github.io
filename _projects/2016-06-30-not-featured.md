@@ -1,7 +1,8 @@
 ---
 layout: project
-title: a test project that will not appear on the homepage
+title: test project
 featured: false
+abstract: 
+keywords:
 ---
-
 this is stuff about {{title}}

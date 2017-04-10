@@ -1,18 +1,31 @@
 <div class="container">
+  test {{ include.all }}
   <div class="user-details">
-    <h3> Featured Member Projects </h3>
+    <h3><a href="{{ '/pages/project_toc.html' | prepend: site.baseurl }}">Featured Member Projects</a></h3>
   </div>
   {% for project in site.projects %}
-    {% if project.featured == true %}
+    {% if project.featured == true or include.includeAll == true %}
       <div class="row user-projects">
         <div class="six columns images">
-          <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+          <img alt="mountains" src="{{ '/assets/img/mountains.jpg' | prepend: site.baseurl }}" />
         </div>
         <div class="six columns">
-          <h5> {{project.title}} </h5>
-          <li> Featured Skills </li>
-          <p> {{project.abstract}} </p>
-          <a class="project-link" href="#">Read More</a>
+          <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
+          {% if project.keywords %}
+            <div> 
+              <small> 
+                {% for key in project.keywords %} 
+                  <a href="">{{ key }}</a>
+                {% endfor %}
+              </small>
+            </div>
+          {% endif %}
+          {% if project.abstract %}
+            {{ project.abstract }}
+          {% else %}
+            {{ project.excerpt }}
+          {% endif %}
+          <a class="project-link" href="{{ project.url }}">Read More</a>
         </div>
       </div>
     {% endif %}
