@@ -132,16 +132,9 @@ body {
 
 .project-link {
   display: block;
-  width: 100px;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
+  width: 150px;
+  // margin: 10px 0px;
+  // padding: 5px;
   cursor: pointer;
   transition: color 0.3s ease-out,
               background-color 0.3s ease-out,
@@ -164,10 +157,14 @@ body {
   }
 }
 
+.center {
+    text-align: center;
+}
+
 #footer {
   background: $main;
   padding: 10px 0;
-  margin-top: 100px;
+  margin-top: 0px;
   text-align: center;
   color: #FFF;
   .love {
