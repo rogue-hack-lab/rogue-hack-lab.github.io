@@ -1,10 +1,13 @@
 ---
+# sit organizational properties. don't change this
 layout: project
-title: Pixual.io
-categories: Game Javascript Global Game Jam
 featured: true
-abstract: 
+sort-order:
+
+title: Pixual.io
 keywords: [Javascript, Web Design, Game Design]
 ---
 
-this is stuff about {{title}}
+As part of the Global Game Jam some of our members created this game.
+<!-- more -->
+[play pixual](http://pixual.io)

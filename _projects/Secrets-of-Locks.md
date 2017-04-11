@@ -5,9 +5,9 @@ featured: false
 sort-order:
 
 # modify these to be specific to your project
-title: Translux
+title: The Secrets of Locks
 abstract: 
-keywords: [Hardware, Open Source]
+keywords: [Hardware, Security]
 ---
 
 <!-- more -->
