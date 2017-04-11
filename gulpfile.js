@@ -58,6 +58,11 @@ gulp.task('imagemin', function() {
 		.pipe(gulp.dest('assets/img/'));
 });
 
+gulp.task('svg', function() {
+	return gulp.src('src/img/**/*.svg')
+		.pipe(gulp.dest('assets/img/'));
+});
+
 /**
  * Compile and minify js
  */
@@ -73,6 +78,7 @@ gulp.task('watch', function() {
 	gulp.watch('src/styles/**/*.scss', ['sass', 'jekyll-rebuild']);
 	gulp.watch('src/js/**/*.js', ['js', 'jekyll-rebuild']);
 	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin', 'jekyll-rebuild']);
+	gulp.watch('src/img/**/*.svg', ['svg', 'jekyll-rebuild']);
 	gulp.watch(['*.html', '_includes/*html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
