@@ -1,9 +1,10 @@
 $sec: #4B5664;
 $purple: #54516A;
 $cut: 768px;
-$rhlgray: #2D2E2D;
-$rhlorange: #FF8800;
-$main: $rhlgray;
+$rhl-gray: #2D2E2D;
+$rhl-orange: #FF8800;
+$rhl-orange-darker: #d87300;
+$main: $rhl-gray;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
@@ -11,6 +12,16 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  color: $rhl-orange;
+  &:hover {
+    color: $rhl-orange-darker;
+    text-decoration: underline;
+  }
+}
+
 
 @-webkit-keyframes pulse {
     from {
@@ -141,16 +152,16 @@ body {
               background-color 0.3s ease-out,
               border-color 0.3s ease-out;
   &:hover {
-    background-color: $rhlgray;
-    border-color: $rhlgray;
+    background-color: $rhl-gray;
+    border-color: $rhl-gray;
     color: #fff;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
                 border-color 0.3s ease-in;
   }
   &:active {
-    background-color: $rhlgray;
-    border-color: $rhlgray;
+    background-color: $rhl-gray;
+    border-color: $rhl-gray;
     color: #fff;
     transition: color 0.3s ease-in,
                 background-color 0.3s ease-in,
@@ -189,8 +200,8 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background: $rhlgray;
-  color: $rhlorange;
+  background: $rhl-gray;
+  color: $rhl-orange;
   height: 3em;
   line-height: 3em;
   position: fixed;
@@ -205,8 +216,9 @@ body {
     position: absolute;
     margin-left: .5em;
     a {
-      text-decoration: none;
-      color: $rhlorange;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -230,13 +242,19 @@ body {
   .mup-event {
     padding-bottom: .5em;
   }
-  a {
-    text-decoration: none;
-    color: $rhlorange;
-  }
   .mup-dt, .mup-loc {
     font-size: 12px;
     color: #555;
+  }
+}
+
+.logo {
+  height: 100px;
+  img {
+    width: 75%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
