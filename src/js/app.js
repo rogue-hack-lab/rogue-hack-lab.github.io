@@ -1,6 +1,10 @@
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
-  const sweetScroll = new SweetScroll({/* some options */});
+  //http://tsuyoshiwada.github.io/sweet-scroll/
+  const sweetScroll = new SweetScroll({
+    offset: -30, // Specifies the value to offset the scroll position in pixels
+    updateURL: true, // Update the URL hash on after scroll (true | false | "push" | "replace")
+  });
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
   particlesJS('particles-js', {

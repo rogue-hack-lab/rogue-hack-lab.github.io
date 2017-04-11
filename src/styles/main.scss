@@ -182,12 +182,17 @@ a {
     text-align: center;
 }
 
+#panel {
+  box-shadow: 0 0 10px #000;
+}
+
 #footer {
   background: $main;
   padding: 10px 0;
   margin-top: 0px;
   text-align: center;
   color: #FFF;
+  z-index: 20;
   .love {
     color: red;
   }
