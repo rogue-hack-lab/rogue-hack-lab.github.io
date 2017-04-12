@@ -2,12 +2,19 @@
 # sit organizational properties. don't change this
 layout: project
 featured: false
-sort-order:
+sort-order: 90
 
 # modify these to be specific to your project
+# mandatory
 title: The Secrets of Locks
-abstract: 
+
+# optional - if not used, comment out using '#' (i.e. date:)
+hackers: [Nick Benedetti, Patrick Cunningham]
+# date: 
+# abstract:
 keywords: [Hardware, Security]
+# thumbnail: 
+# link: 
 ---
 
 <!-- more -->

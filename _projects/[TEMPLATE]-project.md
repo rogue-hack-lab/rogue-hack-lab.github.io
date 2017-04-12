@@ -2,11 +2,19 @@
 # sit organizational properties. don't change this
 layout: project
 featured: false
-sort-order:
+sort-order: 90
 
 # modify these to be specific to your project
+# mandatory
+title: Awesome Project
+
+# optional - if not used, comment out using '#' (i.e. date:)
+hackers: [Your Name, Other Name, Another Name]
+# date: 
 abstract: if you provide an abstract, this is the short description that will show up in the project index
-keywords: [ , , ];
+keywords: [keyword, key phrase]
+thumbnail: link-to.jpg
+link: www.roguehacklab.com
 
 ---
 
