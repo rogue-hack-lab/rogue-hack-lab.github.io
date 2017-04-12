@@ -6,6 +6,7 @@ This is the future RHL Website.
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
+- Install [Ruby](https://www.ruby-lang.org)
 - Install [Jekyll](http://jekyllrb.com)
 - Install [NodeJS](https://nodejs.org/)
 - Run `npm install`
