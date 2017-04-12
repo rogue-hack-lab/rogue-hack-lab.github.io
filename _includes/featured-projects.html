@@ -1,35 +1,40 @@
-<div class="container">
-  <div class="user-details">
-    <h3>Featured Member Projects</h3>
-  </div>
-  {% for project in site.projects %}
-    {% if project.featured == true or include.all == true %}
-      <div class="row user-projects">
-        <div class="six columns images">
-          <img alt="mountains" src="{{ '/assets/img/mountains.jpg' | prepend: site.baseurl }}" />
+<section id="projects">
+  <div class="container">
+    <div class="user-details">
+      <h3>Featured Member Projects</h3>
+    </div>
+    {% comment %} 
+    * TODO {% assign sortedProjects = site.projects | sort: 'featured', 'sort-order', 'date' %} 
+    {% endcomment %}
+    {% for project in site.projects %}
+      {% if project.featured or include.all %}
+        <div class="row user-projects">
+          <div class="six columns images">
+            <img alt="mountains" src="{{ '/assets/img/mountains.jpg' | prepend: site.baseurl }}" />
+          </div>
+          <div class="six columns">
+            <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
+            {% if project.keywords %}
+              <div> 
+                <small> 
+                  {% for key in project.keywords %} 
+                    <a href="">{{ key }}</a>
+                  {% endfor %}
+                </small>
+              </div>
+            {% endif %}
+            {% if project.abstract %}
+              {{ project.abstract }}
+            {% else %}
+              {{ project.excerpt }}
+            {% endif %}
+            <a class="project-link button" href="{{ project.url }}">Read More</a>
+          </div>
         </div>
-        <div class="six columns">
-          <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
-          {% if project.keywords %}
-            <div> 
-              <small> 
-                {% for key in project.keywords %} 
-                  <a href="">{{ key }}</a>
-                {% endfor %}
-              </small>
-            </div>
-          {% endif %}
-          {% if project.abstract %}
-            {{ project.abstract }}
-          {% else %}
-            {{ project.excerpt }}
-          {% endif %}
-          <a class="project-link button" href="{{ project.url }}">Read More</a>
-        </div>
-      </div>
+      {% endif %}
+    {% endfor %}
+    {% if include.all == false %}
+      <p class="center"><a class="button" href="{{  '/pages/project-toc.html' | prepend: site.baseurl }}">View all projects</a></p>
     {% endif %}
-  {% endfor %}
-  {% if include.all == false %}
-    <p class="center"><a class="button" href="{{  '/pages/project-toc.html' | prepend: site.baseurl }}">View all projects</a></p>
-  {% endif %}
-</div>
+  </div>
+</section>

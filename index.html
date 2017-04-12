@@ -2,9 +2,5 @@
 layout: default
 ---
 {% include hero.html %}
-<section id="about">
-  {% include about.html %}
-</section>
-<section id="projects">
-  {% include featured-projects.html all=false%}
-</section>
+{% include about.html %}
+{% include featured-projects.html all=false%}

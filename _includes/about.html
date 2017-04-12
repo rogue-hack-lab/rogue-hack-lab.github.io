@@ -1,11 +1,13 @@
-<div class="container">
-  <div class="user-details">
-    <h3> Who We Are </h3>
-    <p> {{site.user_description}} </p>
+<section id="about">
+  <div class="container">
+    <div class="user-details">
+      <h3> Who We Are </h3>
+      <p> {{site.user_description}} </p>
+    </div>
+    <div class="row user">
+      {% include meetup.html %}
+      {% include slack.html %}
+      {% include donate.html %}
+    </div>
   </div>
-  <div class="row user">
-    {% include meetup.html %}
-    {% include slack.html %}
-    {% include donate.html %}
-  </div>
-</div>
+</section>
