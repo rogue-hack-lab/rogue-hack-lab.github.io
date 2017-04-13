@@ -13,8 +13,8 @@ hackers: [Your Name, Other Name, Another Name]
 # date: 
 # abstract: 
 keywords: [Javascript, Web Design, Raspberry Pi]
-# thumbnail: 
-# link: 
+thumbnail: https://cdn.instructables.com/FAU/0H2G/IQYTN99A/FAU0H2GIQYTN99A.LARGE.jpg
+link: roguehacklab.com/photobooth
 
 ---
 

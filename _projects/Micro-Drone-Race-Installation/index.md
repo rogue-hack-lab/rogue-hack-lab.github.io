@@ -13,7 +13,7 @@ hackers: [Kevin Conner, Patrick Cunningham, Mica Cardillo]
 date: 01/09/2016
 abstract: Micro drone race installation using Particle.io Photon IOT development boards
 keywords: [quadcopter, drone, particle.io, IOT]
-# thumbnail: 
+thumbnail: feature-photo.jpg
 # link:
 
 ---

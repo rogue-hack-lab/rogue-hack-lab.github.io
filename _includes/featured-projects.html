@@ -10,7 +10,13 @@
       {% if project.featured or include.all %}
       <div class="row user-projects">
         <div class="six columns images">
-          <img alt="Photo of {{ project.title }}" src="{{ project.url | replace:'index.html','feature-photo.jpg' | prepend: site.baseurl }}" />
+          {% if project.thumbnail %}
+            {% assign thumbnail = project.url | replace:'index.html',project.thumbnail | prepend: site.baseurl %}
+            <a href="{{ thumbnail }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+          {% else %}
+            {% assign thumbnail = "/assets/img/placeholder.png" | prepend: site.baseurl %}
+            <a href="{{ project.url }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+          {% endif %}
         </div>
           <div class="six columns">
             <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
@@ -18,7 +24,8 @@
               <div> 
                 <small> 
                   {% for key in project.keywords %} 
-                    <a href="">{{ key }}</a>
+                    <!-- TODO <a href="">{{ key }}</a>-->
+                    {{ key }}
                   {% endfor %}
                 </small>
               </div>

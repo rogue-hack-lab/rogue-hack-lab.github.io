@@ -13,7 +13,7 @@ hackers: [Kevin Conner, Seth Morgan]
 # date: 
 abstract: Many members of Rogue Hack Lab use and have built 3D printers. Collectively mastering this process is an ongoing project that we engage in at nearly every oportunity.
 keywords: [3D Printing, Hardware, Open Source]
-# thumbnail: 
+thumbnail: feature-photo.jpg
 # link:
 
 ---
