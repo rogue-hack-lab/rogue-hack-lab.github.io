@@ -1,4 +1,4 @@
-var MENU_HIDE_DELAY = 400;
+var SLIDEOUT_HIDE_DELAY = 400;
 
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
   $('#menu').on('mouseleave', function(){
     setTimeout(function(){
         slideout.toggle()
-    }, MENU_HIDE_DELAY);
+    }, SLIDEOUT_HIDE_DELAY);
   });
 
   if ($('#particles-js').length) {
