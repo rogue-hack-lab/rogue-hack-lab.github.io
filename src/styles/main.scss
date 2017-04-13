@@ -221,7 +221,7 @@ a {
   position: fixed;
   width: 100%;
   z-index: 100;
-
+  transition: all 0.25s ease;
   h1 {
     font-family: 'Unibody8ProRegular', sans-serif;
     height: 2em;
@@ -231,6 +231,7 @@ a {
     position: absolute;
     margin-left: .5em;
     overflow: hidden;
+    transition: all 0.25s ease;
     a {
       &:hover {
         text-decoration: none;
@@ -246,6 +247,15 @@ a {
 
   }
 
+}
+
+#header.over-hero {
+    background-color: rgba(0, 0, 0, 0);
+    h1 {
+      visibility: hidden;
+      transition: all 0.5s ease;
+      opacity: 0;
+    }
 }
 
 .container {
