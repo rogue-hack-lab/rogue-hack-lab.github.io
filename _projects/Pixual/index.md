@@ -11,19 +11,12 @@ title: Pixual.io
 # optional - if not used, comment out using '#' (i.e. date:)
 hackers: [Patrick Cunningham, Mica Cardillo, Kevin Conner]
 # date: 
-# abstract:
+abstract: A Global Game Jam creation to pick the difference between two sides of random squares.
 keywords: [Javascript, Web Design, Game Design]
 # thumbnail: 
 link: http://pixual.io
 
 ---
-
-title: Awesome Project
-
-abstract: if you provide an abstract, this is the short description that will show up in the project index
-keywords: [keyword, key phrase]
-
----
-As part of the Global Game Jam some of our members created this game.
+A Global Game Jam creation to pick the difference between two sides of random squares.
 <!-- more -->
-[play pixual]({{ link }})
+[play pixual](http://pixual.io)

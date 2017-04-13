@@ -8,10 +8,10 @@
     {% endcomment %}
     {% for project in site.projects %}
       {% if project.featured or include.all %}
-        <div class="row user-projects">
-          <div class="six columns images">
-            <img alt="mountains" src="{{ '/assets/img/mountains.jpg' | prepend: site.baseurl }}" />
-          </div>
+      <div class="row user-projects">
+        <div class="six columns images">
+          <img alt="Photo of {{ project.title }}" src="{{ project.url | replace:'index.html','feature-photo.jpg' | prepend: site.baseurl }}" />
+        </div>
           <div class="six columns">
             <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
             {% if project.keywords %}
@@ -38,3 +38,4 @@
     {% endif %}
   </div>
 </section>
+
