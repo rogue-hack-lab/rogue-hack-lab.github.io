@@ -1,3 +1,5 @@
+var MENU_HIDE_DELAY = 400;
+
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
   //http://tsuyoshiwada.github.io/sweet-scroll/
@@ -137,7 +139,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
     
   $('#menu').on('mouseleave', function(){
-    slideout.toggle();
+    setTimeout(function(){
+        slideout.toggle()
+    }, MENU_HIDE_DELAY);
   });
 
   if ($('#particles-js').length) {
