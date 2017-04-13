@@ -135,6 +135,10 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('#toggle-button').addEventListener('click', function() {
     slideout.toggle();
   });
+    
+  $('#menu').on('mouseleave', function(){
+    slideout.toggle();
+  });
 
   if ($('#particles-js').length) {
     $('#header').addClass('over-hero');
