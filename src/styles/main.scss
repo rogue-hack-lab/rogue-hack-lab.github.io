@@ -285,5 +285,15 @@ a {
   }
 }
 
+.thumbnail {
+  height: 25%;
+  width: 25%;
+  padding: 5% 37.5%;
+}
+
+.brand {
+  background-color: $rhl-orange;
+}
+
 @import '_slideout';
 @import '_hero';

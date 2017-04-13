@@ -14,8 +14,8 @@
             {% assign thumbnail = project.url | replace:'index.html',project.thumbnail | prepend: site.baseurl %}
             <a href="{{ thumbnail }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
           {% else %}
-            {% assign thumbnail = "/assets/img/placeholder.png" | prepend: site.baseurl %}
-            <a href="{{ project.url }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+            {% assign thumbnail = "/assets/img/bug.svg" | prepend: site.baseurl %}
+            <a href="{{ project.url }}"><img class="thumbnail brand" alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
           {% endif %}
         </div>
           <div class="six columns">
