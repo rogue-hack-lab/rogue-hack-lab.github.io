@@ -1,3 +1,5 @@
+var MENU_HIDE_DELAY = 400;
+
 /* sweetScroll load */
 document.addEventListener("DOMContentLoaded", function () {
   //http://tsuyoshiwada.github.io/sweet-scroll/
@@ -135,9 +137,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector('#toggle-button').addEventListener('click', function() {
     slideout.toggle();
   });
+    
+  $('#menu').on('mouseleave', function(){
+    setTimeout(function(){
+        slideout.toggle()
+    }, MENU_HIDE_DELAY);
+  });
 
   if ($('#particles-js').length) {
-    $('#header').addClass('over-hero');
     var heroBottom = $('#particles-js').offset().top + $('#particles-js').height() - (16*4);
 
     // on scroll, 
