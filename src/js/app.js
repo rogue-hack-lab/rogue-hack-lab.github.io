@@ -141,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if ($('#particles-js').length) {
-    $('#header').addClass('over-hero');
     var heroBottom = $('#particles-js').offset().top + $('#particles-js').height() - (16*4);
 
     // on scroll, 
