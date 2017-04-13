@@ -226,10 +226,11 @@ a {
     font-family: 'Unibody8ProRegular', sans-serif;
     height: 2em;
     line-height: inherit;
-    font-size: 2em;
+    font-size: 1.5em;
     display: inline;
     position: absolute;
     margin-left: .5em;
+    overflow: hidden;
     a {
       &:hover {
         text-decoration: none;
@@ -265,6 +266,7 @@ a {
 
 .logo {
   height: 100px;
+  overflow: hidden;
   img {
     width: 75%;
     position: relative;
