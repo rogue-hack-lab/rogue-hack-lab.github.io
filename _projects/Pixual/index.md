@@ -13,7 +13,7 @@ hackers: [Patrick Cunningham, Mica Cardillo, Kevin Conner]
 # date: 
 abstract: A Global Game Jam creation to pick the difference between two sides of random squares.
 keywords: [Javascript, Web Design, Game Design]
-# thumbnail: 
+thumbnail: feature-photo.jpg
 link: http://pixual.io
 
 ---
