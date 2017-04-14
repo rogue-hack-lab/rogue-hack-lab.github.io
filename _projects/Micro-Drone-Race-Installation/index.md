@@ -1,5 +1,5 @@
 ---
-# sit organizational properties. don't change this
+# site organizational properties. don't change this
 layout: project
 featured: true
 sort-order: 1
