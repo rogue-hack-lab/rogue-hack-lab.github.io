@@ -1,7 +1,7 @@
 ---
 # site organizational properties. don't change this
 layout: project
-featured: false
+featured: true
 sort-order: 90
 
 # modify these to be specific to your project
@@ -13,11 +13,18 @@ hackers: [Your Name, Other Name, Another Name]
 # date: 
 # abstract: 
 keywords: [Javascript, Web Design, Raspberry Pi]
-thumbnail: https://cdn.instructables.com/FAU/0H2G/IQYTN99A/FAU0H2GIQYTN99A.LARGE.jpg
+thumbnail: IMG_0005.PNG
 link: roguehacklab.com/photobooth
 
 ---
 
-Get your photo taken and printed on a recit for future download.
+Using a [RaspberryPi](http://RaspberryPi.org), camera module, thermal printer and a switch we created a photobooth that will take pictures, upload them to the internet and then allow participants to download the pictures later.
 <!-- more -->
-[get pictures]({{ link }})
+
+__Had your photo taken? [Access your picture here](http://roguehacklab.com/photobooth/).__
+
+## How its made
+
+The majority of the setup is following this [Adafruit Guide](https://learn.adafruit.com/instant-camera-using-raspberry-pi-and-thermal-printer) with some [custom scripts](https://github.com/rogue-hack-lab/photobooth).
+
+<img src="IMG_8679.JPG" class="u-max-full-width">

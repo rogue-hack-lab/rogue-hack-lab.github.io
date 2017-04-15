@@ -23,9 +23,10 @@
             {% if project.keywords %}
               <div> 
                 <small> 
+                  - 
                   {% for key in project.keywords %} 
                     <!-- TODO <a href="">{{ key }}</a>-->
-                    {{ key }}
+                    {{ key }} - 
                   {% endfor %}
                 </small>
               </div>
@@ -33,7 +34,9 @@
             {% if project.abstract %}
               {{ project.abstract }}
             {% else %}
-              {{ project.excerpt }}
+              <p class="excerpt">
+                {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+              </p>
             {% endif %}
             <a class="project-link button" href="{{ project.url }}">Read More</a>
           </div>

@@ -11,15 +11,14 @@ title: Mutant Toys
 # optional - if not used, comment out using '#' (i.e. date:)
 hackers: [Your Name, Other Name, Another Name]
 # date: 
-abstract: if you provide an abstract, this is the short description that will show up in the project index
+# abstract: 
 #keywords: [keyword, key phrase]
 thumbnail: mutant-toys.jpg
 #link: www.roguehacklab.com
 
 ---
 
-start writing about your project here. if you don't have an abstract, the text before the < ! - - m o r e - - > thingy will show up in the project index.
-<!-- more -->
-stuff after the  < ! - - m o r e - - > comment will only show up in the project detail.
+ Create your very own toy story! At this station, it's okay to cut Barbie's hair, or replace G.I. Joe's arms with octopus tentacles, or add wheels to My Little Pony. We'll supply tools and toys, you bring your imagination and sense of humor.
+ 
+ <!-- more -->
 
-<!--Here's some info on markdown https://help.github.com/articles/basic-writing-and-formatting-syntax/ -->

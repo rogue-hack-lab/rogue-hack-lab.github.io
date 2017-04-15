@@ -11,15 +11,15 @@ title: Robot Training
 # optional - if not used, comment out using '#' (i.e. date:)
 #hackers: [Your Name, Other Name, Another Name]
 # date: 
-#abstract: if you provide an abstract, this is the short description that will show up in the project index
+#abstract: 
 #keywords: [keyword, key phrase]
 thumbnail: feature-photo.jpg
 #link: www.roguehacklab.com
 
 ---
 
-start writing about your project here. if you don't have an abstract, the text before the < ! - - m o r e - - > thingy will show up in the project index.
-<!-- more -->
-stuff after the  < ! - - m o r e - - > comment will only show up in the project detail.
+With a few recycled parts, an Arduino + motor shield, and Dlib computer software, you can make a working face-detecting candy thrower.
 
-<!--Here's some info on markdown https://help.github.com/articles/basic-writing-and-formatting-syntax/ -->
+<!-- more -->
+
+[instructables](http://www.instructables.com/id/Candy-Throwing-Robot-With-Arduino-Recycled-Parts-a/)

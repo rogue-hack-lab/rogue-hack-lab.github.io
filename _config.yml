@@ -40,4 +40,4 @@ google-analytics:
 exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js', 'README.md', 'LICENSE.txt', '**/*\[TEMPLATE\]*.*']
 
 # markdown formatting
-excerpt_separator: <!--more-->
+excerpt_separator: <!-- more -->

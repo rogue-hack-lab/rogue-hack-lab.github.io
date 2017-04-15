@@ -11,12 +11,14 @@ title: Pixual.io
 # optional - if not used, comment out using '#' (i.e. date:)
 hackers: [Patrick Cunningham, Mica Cardillo, Kevin Conner]
 # date: 
-abstract: A Global Game Jam creation to pick the difference between two sides of random squares.
+# abstract: 
 keywords: [Javascript, Web Design, Game Design]
 thumbnail: feature-photo.jpg
 link: http://pixual.io
 
 ---
-A Global Game Jam creation to pick the difference between two sides of random squares.
+Created as part of the [Global Game Jam](http://www.globalgamejam.org/) 2016 the game is simple: Given two nearly identical square grids of pixels, the player must determine which single pixel is not identical between grids. 
+
 <!-- more -->
-[play pixual](http://pixual.io)
+
+[play pixual](http://pixual.io) or [view source](https://github.com/rogue-hack-lab/pixual)
