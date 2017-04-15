@@ -15,11 +15,11 @@
             <a href="{{ thumbnail }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
           {% else %}
             {% assign thumbnail = "/assets/img/bug.svg" | prepend: site.baseurl %}
-            <a href="{{ project.url }}"><img class="thumbnail brand" alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+            <a href="{{ project.url | prepend: site.baseurl }}"><img class="thumbnail brand" alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
           {% endif %}
         </div>
           <div class="six columns">
-            <h5> <a href="{{ project.url }}">{{ project.title }}</a> </h5>
+            <h5> <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a> </h5>
             {% if project.keywords %}
               <div> 
                 <small> 
@@ -38,7 +38,7 @@
                 {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
               </p>
             {% endif %}
-            <a class="project-link button" href="{{ project.url }}">Read More</a>
+            <a class="project-link button" href="{{ project.url | prepend: site.baseurl }}">Read More</a>
           </div>
         </div>
       {% endif %}
