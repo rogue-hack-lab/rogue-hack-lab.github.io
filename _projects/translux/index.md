@@ -13,7 +13,7 @@ hackers: [Emile, John Armstrong, Kevin Conner]
 # date: 
 # abstract: 
 keywords: [Hardware, Open Source, Arduino, Particle.io]
-thumbnail: translux.jpg
+thumbnail: mini_drone_race.png
 # link:
 
 ---
