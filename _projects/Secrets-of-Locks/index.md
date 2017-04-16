@@ -21,4 +21,4 @@ Have you ever lost your keys and wondered how those locksmiths get you in?  Come
 
 <!-- more -->
 
-If your interested in a good tutorial we recomend [The Art of Lock Picking](https://art-of-lockpicking.com/how-to-pick-a-lock-guide/).
+If your interested in a good tutorial we recommend [The Art of Lock Picking](https://art-of-lockpicking.com/how-to-pick-a-lock-guide/).

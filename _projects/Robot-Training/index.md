@@ -18,8 +18,8 @@ thumbnail: feature-photo.jpg
 
 ---
 
-With a few recycled parts, an Arduino + motor shield, and Dlib computer software, you can make a working face-detecting candy thrower.
+With a few recycled parts, an Arduino + motor shield, and [Dlib](http://dlib.net/) computer software, you can make a working face-detecting candy thrower.
 
 <!-- more -->
 
-[instructables](http://www.instructables.com/id/Candy-Throwing-Robot-With-Arduino-Recycled-Parts-a/)
+[Instructables](http://www.instructables.com/id/Candy-Throwing-Robot-With-Arduino-Recycled-Parts-a/)

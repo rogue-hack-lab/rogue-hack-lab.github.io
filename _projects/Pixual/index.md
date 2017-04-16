@@ -21,4 +21,4 @@ Created as part of the [Global Game Jam](http://www.globalgamejam.org/) 2016 the
 
 <!-- more -->
 
-[play pixual](http://pixual.io) or [view source](https://github.com/rogue-hack-lab/pixual)
+[play Pixual](http://pixual.io) or [view source](https://github.com/rogue-hack-lab/pixual)

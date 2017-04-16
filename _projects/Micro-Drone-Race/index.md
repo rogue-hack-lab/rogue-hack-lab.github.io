@@ -18,11 +18,11 @@ thumbnail: feature-photo.jpg
 
 ---
 
-Test your hand at flying one of our mini drones through our custom built lightup course. Think you have what it takes to compete?
+Test your hand at flying one of our mini drones through our custom built light up course. Think you have what it takes to compete?
 
 <!-- more -->
 
-The micro drone (quadcopter) race cource is built using [Particle.io](http://Particle.io) Photon IOT development boards and hoops containing WS2812 LEDs ([NeoPixels](https://learn.adafruit.com/adafruit-neopixel-uberguide/overview)).
+The micro drone (quadcopter) race course is built using [Particle.io](http://Particle.io) Photon IOT development boards and hoops containing WS2812 LEDs ([NeoPixels](https://learn.adafruit.com/adafruit-neopixel-uberguide/overview)).
 
 [source code](https://github.com/rogue-hack-lab/drone-racing)
 
@@ -33,4 +33,4 @@ The micro drone (quadcopter) race cource is built using [Particle.io](http://Par
 
 ## Buy a Quad
 
-We try to have quadcoptors available at events for purchase but if we run out you can purchase your own. We use the [Eachine H8](http://www.banggood.com/Eachine-H8-Mini-Headless-Mode-2_4G-4CH-6-Axis-RC-Quadcopter-RTF-p-975808.html) in white with `Mode 2 (Left Hand Throttle)`.
+We try to have quadcopters available at events for purchase but if we run out you can purchase your own. We use the [Eachine H8](http://www.banggood.com/Eachine-H8-Mini-Headless-Mode-2_4G-4CH-6-Axis-RC-Quadcopter-RTF-p-975808.html) in white with `Mode 2 (Left Hand Throttle)`.
