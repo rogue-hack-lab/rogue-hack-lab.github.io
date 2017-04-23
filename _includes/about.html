@@ -5,9 +5,15 @@
       <p> {{site.user_description}} </p>
     </div>
     <div class="row user">
-      {% include meetup.html %}
-      {% include slack.html %}
-      {% include donate.html %}
+      <div class="four columns">
+        {% include meetup.html %}
+      </div>
+      <div class="four columns">
+        {% include slack.html %}
+      </div>
+      <div class="four columns">
+        {% include donate.html %}
+      </div>
     </div>
   </div>
 </section>

@@ -1,10 +1,14 @@
 #particles-js {
   background: $main;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   width: 100%;
   min-height: 100vh;
+
+  position: relative;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -15,10 +19,16 @@
 }
 
 .hero {
-  z-index: 5;
-  text-align: center;
-  color:#FFF;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  z-index: 5;
+  
+  color:#FFF;
+
+  text-align: center;
   
   .site-title {
     font-size: 50px;

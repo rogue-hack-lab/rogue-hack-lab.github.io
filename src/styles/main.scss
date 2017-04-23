@@ -196,6 +196,9 @@ a {
   .love {
     color: red;
   }
+  .hack {
+    color: $rhl-orange;
+  }
   a {
     text-decoration: none;
     margin: 0;
@@ -280,6 +283,7 @@ a {
   overflow: hidden;
   img {
     width: 75%;
+    max-width: 300px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);

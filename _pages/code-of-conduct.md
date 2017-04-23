@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Code of Conduct
+showmenu: false
 ---
 Respect gets respect.
 
