@@ -2,7 +2,7 @@
 # site organizational properties. don't change this
 layout: project
 featured: true
-sort-order: 1
+sort-order: 10
 
 # modify these to be specific to your project
 # mandatory

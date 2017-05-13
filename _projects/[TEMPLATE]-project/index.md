@@ -13,7 +13,7 @@ hackers: [Your Name, Other Name, Another Name]
 # date: 
 abstract: if you provide an abstract, this is the short description that will show up in the project index
 keywords: [keyword, key phrase]
-thumbnail: ./assets/img/placeholder.png
+thumbnail: ../../assets/img/placeholder.png
 link: www.roguehacklab.com
 
 ---
