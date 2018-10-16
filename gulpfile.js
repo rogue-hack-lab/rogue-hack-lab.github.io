@@ -5,7 +5,6 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var cp = require('child_process');
-var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 
 var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
@@ -54,7 +53,6 @@ gulp.task('sass', function() {
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*.{jpg,png,gif}')
 		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
 		.pipe(gulp.dest('assets/img/'));
 });
 
