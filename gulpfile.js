@@ -5,7 +5,6 @@ var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
 var cp = require('child_process');
-var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 
 var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
@@ -22,20 +21,20 @@ gulp.task('jekyll-build', function (done) {
 /*
  * Rebuild Jekyll & reload browserSync
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', gulp.series('jekyll-build', function () {
 	browserSync.reload();
-});
+}));
 
 /*
  * Build the jekyll site and launch browser-sync
  */
-gulp.task('browser-sync', ['jekyll-build'], function() {
+gulp.task('browser-sync', gulp.series('jekyll-build', function() {
 	browserSync({
 		server: {
 			baseDir: '_site'
 		}
 	});
-});
+}));
 
 /*
 * Compile and minify sass
@@ -54,7 +53,6 @@ gulp.task('sass', function() {
 gulp.task('imagemin', function() {
 	return gulp.src('src/img/**/*.{jpg,png,gif}')
 		.pipe(plumber())
-		.pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
 		.pipe(gulp.dest('assets/img/'));
 });
 
@@ -88,4 +86,7 @@ gulp.task('watch', function() {
 	gulp.watch(['**/*.md','*.html', '_includes/*html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
-gulp.task('default', ['js', 'sass', 'browser-sync', 'watch']);
+gulp.task('default', 
+	gulp.parallel('js',
+	gulp.parallel('sass',
+	gulp.series('browser-sync', 'watch'))));
