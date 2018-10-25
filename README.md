@@ -12,7 +12,10 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install`
 - linux: Run `sudo npm install -g gulp-cli`
 - windows: Run `npm install -g gulp-cli`
+- Run `jekyll`
 - Run `gulp`
+
+You may need to alternately run the last two commands and clear browser cache for debugging purposes while making changes.
 
 To edit css/js edit the files in `src` that are compiled with `gulp`.
 
