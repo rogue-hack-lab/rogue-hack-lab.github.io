@@ -9,9 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if ($('#particles-js').length) {
-
+debugger;
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS('particles-js', {
+    pJS('particles-js', {
+      "fps_limit": 3,
       "particles": {
         "number": {
           "value": 30,
