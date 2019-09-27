@@ -1,8 +1,8 @@
 ---
 # site organizational properties. don't change this
 layout: project
-featured: true
-sort-order: 90
+featured: false
+sort-order: 20
 
 # modify these to be specific to your project
 # mandatory
@@ -10,8 +10,8 @@ title: 3D Printing
 
 # optional - if not used, comment out using '#'
 hackers: [Kevin Conner, Seth Morgan, Pat Cunningham]
-# date: 
-# abstract: 
+# date:
+# abstract:
 keywords: [3D Printing, Hardware, Open Source]
 thumbnail: feature-photo.jpg
 # link:

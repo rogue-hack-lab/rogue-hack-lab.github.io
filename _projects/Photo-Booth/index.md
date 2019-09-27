@@ -1,7 +1,7 @@
 ---
 # site organizational properties. don't change this
 layout: project
-featured: true
+featured: false
 sort-order: 90
 
 # modify these to be specific to your project
@@ -10,8 +10,8 @@ title: Photo Booth
 
 # optional - if not used, comment out using '#' (i.e. date:)
 hackers: [Your Name, Other Name, Another Name]
-# date: 
-# abstract: 
+# date:
+# abstract:
 keywords: [Javascript, Web Design, Raspberry Pi]
 thumbnail: IMG_0005.PNG
 link: roguehacklab.com/photobooth

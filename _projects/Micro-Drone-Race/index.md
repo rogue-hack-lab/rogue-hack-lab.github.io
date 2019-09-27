@@ -1,8 +1,8 @@
 ---
 # site organizational properties. don't change this
 layout: project
-featured: true
-sort-order: 10
+featured: false
+sort-order: 30
 
 # modify these to be specific to your project
 # mandatory
@@ -11,7 +11,7 @@ title: Micro Drone Race
 # optional
 hackers: [Kevin Conner, Patrick Cunningham, Mica Cardillo]
 date: 01/09/2016
-# abstract: 
+# abstract:
 keywords: [quadcopter, drone, particle.io, IOT]
 thumbnail: feature-photo.jpg
 # link:
