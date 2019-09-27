@@ -10,8 +10,8 @@ title: Hacktoberfest 2019
 
 # optional - if not used, comment out using '#' (i.e. date:)
 hackers: [Kevin Conner]
-# date:
-abstract: if you provide an abstract, this is the short description that will show up in the project index
+# date: "10/10/2019"
+abstract: A celebration of open source software through the month of October.
 keywords: [Hacktoberfest, Meetup, Event]
 thumbnail: ./Hacktoberfest_19_Events_500x500.png
 link: https://hacktoberfest.digitalocean.com/
