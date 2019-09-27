@@ -3,3 +3,5 @@ _site
 node_modules
 .vscode
 Gemfile.lock
+
+.jekyll-cache/
