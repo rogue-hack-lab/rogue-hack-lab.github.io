@@ -1,0 +1,21 @@
+{{ define "main" }}
+<main class="w3-padding">
+	<article>
+		<div style="margin-top:60px" id="showcase">
+			<h1 class=""><b>{{ .Title }}</b></h1>
+			<hr style="width:200px;border:5px solid green" class="w3-round">
+		</div>
+		{{ if .Thumbnail }}
+			<img class="u-max-full-width" alt="Photo of {{ .Title }}" src="{{ .Thumbnail }}" />
+		{{ end }}
+		<div>
+			{{ .Content }}
+		</div>
+		{{ if .Params.tags }}
+		<div class="w3-margin-top">
+				Tags: {{ with .Params.tags }}{{ range $i, $e := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
+		</div>
+		{{ end }}
+	</article>
+</main>
+{{ end }}

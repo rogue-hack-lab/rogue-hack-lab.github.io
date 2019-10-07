@@ -1,0 +1,5 @@
+<ul>
+{{ range .Site.Taxonomies.tags.event }}
+    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+{{ end }}
+</ul>

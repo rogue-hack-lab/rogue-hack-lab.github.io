@@ -1,0 +1,25 @@
+{{ $fileList := sort (readDir "./static/the-repeater/") "Name" "desc" }}
+
+<h2>Current Issue</h2>
+
+{{ range first 1 $fileList }}
+<a href="/the-repeater/{{ .Name }}">{{ dateFormat "January 2006" (time ( replace .Name ".pdf" "-01T00:00:00" ) ) }}</a>
+{{ end }}
+
+<h2>Past Issues</h2>
+
+{{ $year := "" }}
+<ul>
+    {{ range after 1 $fileList }}
+    {{if ne .Name ".DS_Store"}}
+    {{if ne $year (dateFormat "2006" (time ( replace .Name ".pdf" "-01T00:00:00"))) }}
+    {{ $year = dateFormat "2006" (time ( replace .Name ".pdf" "-01T00:00:00" ))}}
+    </ul>
+    <h3>{{ $year }}</h3>
+    <ul>
+    {{ end }}
+    <li><a href="/the-repeater/{{ .Name }}">{{ dateFormat "January 2006" (time ( replace .Name ".pdf" "-01T00:00:00" ) ) }}</a></li>
+    {{ end }}
+    {{ end }}
+
+</ul>

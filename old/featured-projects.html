@@ -1,0 +1,52 @@
+<section id="projects">
+  <div class="container">
+    <div class="user-details">
+      {{ if .all }}
+        <h3>Member Projects</h3>
+      {{ else }}
+        <h3>Featured Member Projects</h3>
+      {{ end }}
+    </div>
+    {{ range project in site.projects }}
+      {{ if project.featured or .all }}
+      <div class="row user-projects">
+        <div class="six columns images">
+          {{ if project.thumbnail }}
+            {{ assign thumbnail = project.url | replace:'index.html',project.thumbnail | prepend: site.baseurl }}
+            <a href="{{ thumbnail }}"><img alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+          {{ else }}
+            {{ assign thumbnail = "/assets/img/bug.svg" | prepend: site.baseurl }}
+            <a href="{{ project.url | prepend: site.baseurl }}"><img class="thumbnail brand" alt="Photo of {{ project.title }}" src="{{ thumbnail }}" /></a>
+          {{ end }}
+        </div>
+          <div class="six columns">
+            <h5> <a href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a> </h5>
+            {{ if project.keywords }}
+              <div> 
+                <small> 
+                  - 
+                  {{ for key in project.keywords }} 
+                    <!-- TODO <a href="">{{ key }}</a>-->
+                    {{ key }} - 
+                  {{ endfor }}
+                </small>
+              </div>
+            {{ end }}
+            {{ if project.abstract }}
+              {{ project.abstract }}
+            {{ else }}
+              <p class="excerpt">
+                {{ project.excerpt | remove: '<p>' | remove: '</p>' }}
+              </p>
+            {{ end }}
+            <a class="project-link button" href="{{ project.url | prepend: site.baseurl }}">Read More</a>
+          </div>
+        </div>
+      {{ end }}
+    {{ endfor }}
+    {{ if .all == false }}
+      <p class="center"><a class="button" href="{{  '/pages/member-projects.html' | prepend: site.baseurl }}">View all projects</a></p>
+    {{ end }}
+  </div>
+</section>
+

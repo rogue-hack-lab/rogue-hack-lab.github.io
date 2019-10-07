@@ -1,0 +1,11 @@
+{{ define "main" }}
+<main class="w3-padding">
+    <div style="margin-top:60px" id="showcase">
+        <h1 class=""><b>{{ $.Site.Title }}</b></h1>
+        <hr style="width:200px;border:5px solid green" class="w3-round">
+    </div>
+        <div>
+            {{ .Content }}
+        </div>
+</main>
+{{ end }}

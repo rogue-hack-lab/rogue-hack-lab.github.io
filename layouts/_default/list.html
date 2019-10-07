@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="w3-padding">
+	<article>
+		{{ if or .Title .Content }}
+		{{ with .Title | humanize }}
+		<div style="margin-top:60px" id="showcase">
+			<h1><b>{{ . }}</b></h1>
+			<hr style="width:200px;border:5px solid green" class="w3-round">
+		</div>
+		{{ end }}
+		{{ with .Content }}
+		<div>
+			{{ . }}
+		</div>
+		{{ end }}
+
+		{{ end }}
+	</article>
+	{{ range .Paginator.Pages }}
+	{{ .Render "summary" }}
+	{{ end }}
+
+	{{ partial "pagination" . }}
+</main>
+{{ end }}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	{{ partial "head" . }}
+</head>
+<body>
+	{{ partial "header" . }}
+	<div class="w3-main" style="margin-left:340px;margin-right:40px">
+		{{ block "main" . }}{{ end }}
+	</div>
+	{{ partial "footer" . }}
+	{{ partial "scripts" . }}
+</body>
+</html>

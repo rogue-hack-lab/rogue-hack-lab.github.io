@@ -1,0 +1,12 @@
+
+<div class="menu">
+	<h2>Menu</h2>
+	<ul>
+		<li><a href="{{ site.github.url }}/index.html">Home</a></li>
+		{{ for page in site.pages }}
+			{{ if page.title and page.showmenu }}
+				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+			{{ endif }}
+		{{ endfor }}
+	</ul>
+</div>

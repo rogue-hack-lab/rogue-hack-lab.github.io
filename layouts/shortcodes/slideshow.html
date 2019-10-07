@@ -1,0 +1,24 @@
+<div class="">
+    <img class="mySlides full-width" src="/banner/2018-7qp.jpg">
+    <img class="mySlides full-width" src="/banner/fd-2018.jpg">
+    <img class="mySlides full-width" src="/banner/fd-2019-1.jpg">
+    <img class="mySlides full-width" src="/banner/fd-2017-air.jpg">
+</div>
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
