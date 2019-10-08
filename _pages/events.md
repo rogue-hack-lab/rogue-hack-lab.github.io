@@ -11,4 +11,4 @@ showmenu: true
 
 ## Upcoming events on
 
-{% include meetup.html %}
+[RogueHackLab Meetup](https://www.meetup.com/Rogue-Hack-Lab/)
