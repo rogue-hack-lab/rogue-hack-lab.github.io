@@ -3,9 +3,8 @@
   command = "HUGO_BASEURL=$URL hugo --minify; npm run build:functions"
   functions = "./functions-build"
 
-
 [build.environment]
-  HUGO_VERSION = "0.57.2"
+  HUGO_VERSION = "0.58.3"
 
 [context.deploy-preview]
   command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --i18n-warnings"
