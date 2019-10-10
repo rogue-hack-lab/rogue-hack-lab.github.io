@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+{{ partial "head" . }}
+<body>
+	{{ partial "header" . }}
+	<div id="panel">
+		{{ block "main" . }}{{ end }}
+	</div>
+	{{ partial "footer" . }}
+	{{ partial "scripts" . }}
+</body>
+</html>

@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="container">
+	<article>
+		<div >
+			<h1 class=""><b>{{ .Title }}</b></h1>
+		</div>
+		<div>
+			{{ .Content }}
+		</div>
+		{{ if .Params.tags }}
+		<div class="w3-margin-top">
+				Tags: {{ with .Params.tags }}{{ range $i, $e := . }}{{ if $i }}, {{ end }}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
+		</div>
+		{{ end }}
+	</article>
+</main>
+{{ end }}

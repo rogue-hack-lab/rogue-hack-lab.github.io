@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main class="container">
+	<article>
+		{{ if or .Title .Content }}
+		{{ with .Title | humanize }}
+		<div >
+			<h1><b>{{ . }}</b></h1>
+		</div>
+		{{ end }}
+		{{ with .Content }}
+		<div>
+			{{ . }}
+		</div>
+		{{ end }}
+
+		{{ end }}
+	</article>
+	{{ range .Paginator.Pages }}
+	{{ .Render "summary" }}
+	{{ end }}
+
+	{{ partial "pagination" . }}
+</main>
+{{ end }}

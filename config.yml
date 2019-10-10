@@ -1,0 +1,5 @@
+# Site settings
+title: Rogue Hack Lab
+baseURL: "https://roguehacklab.org/"
+languageCode: "en-us"
+googleAnalytics: UA-50519192-2

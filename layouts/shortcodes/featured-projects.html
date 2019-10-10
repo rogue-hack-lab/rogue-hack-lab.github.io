@@ -1,0 +1,28 @@
+<section id="projects">
+    <div class="container">
+        <div class="user-details">
+            
+            <h3>Featured Projects & Events</h3>
+        </div>
+        {{ range (where .Site.RegularPages.ByTitle "Section" "projects" ) }}
+        {{ if .Params.featured }}
+        <div class="row user-projects">
+            <div class="six columns images">
+                <a href="{{ .Permalink }}"><img alt="Photo of {{ .Params.title }}" src="{{ .Permalink }}{{.Params.thumbnail }}" /></a>
+            </div>
+            <div class="six columns">
+                <h5> <a href="{{ .Permalink }}">{{ .Title | humanize | title }}</a> </h5>
+                {{ if .Params.abstract }}
+                <p>{{ .Params.abstract }}</p>
+                {{ else }}
+                <p class="excerpt">
+                    {{ .Summary  }}
+                </p>
+                {{ end }}
+                <a class="project-link button" href="{{ .Permalink  }}">Read More</a>
+            </div>
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</section>
