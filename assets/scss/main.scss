@@ -265,6 +265,10 @@ a {
 .container {
   margin-top: 3em;
   padding-top: 1em;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 #meetup {
@@ -313,6 +317,10 @@ a {
   border:none; 
   min-height: 100em;
   z-index:999999;
+}
+
+.column, .columns {
+  margin-left: 0
 }
 
 @import '_slideout';

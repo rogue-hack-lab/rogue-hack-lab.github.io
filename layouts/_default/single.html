@@ -4,6 +4,11 @@
 		<div >
 			<h1 class=""><b>{{ .Title }}</b></h1>
 		</div>
+		{{ if .Params.thumbnail}}
+		<div>
+			<img alt="Photo of {{ .Params.title }}" src="{{.Params.thumbnail }}" />
+		</div>
+		{{ end }}
 		<div>
 			{{ .Content }}
 		</div>
