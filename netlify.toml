@@ -7,7 +7,7 @@
   HUGO_VERSION = "0.58.3"
 
 [context.deploy-preview]
-  command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --i18n-warnings"
+  command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --i18n-warnings; npm run build:functions"
 
 [context.deploy-preview.environment]
   HUGO_GOOGLEANALYTICS = "dev"
