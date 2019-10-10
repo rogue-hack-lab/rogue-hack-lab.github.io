@@ -12,4 +12,4 @@ menu:
 
 ## Upcoming events on
 
-<a href="https://www.meetup.com/Rogue-Hack-Lab/">RogueHackLab Meetup</a>
+[RogueHackLab Meetup](https://www.meetup.com/Rogue-Hack-Lab/)
