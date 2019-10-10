@@ -1,10 +1,12 @@
 ---
 layout: page
 title: Resources
-showmenu: true
+menu:
+  main:
 ---
 
-__Rogue Valley Maker / Hacker Resources__
+## Rogue Valley Maker / Hacker Resources
+
 - [ScienceWorks Hands-On Museum](http://scienceworksmuseum.org)
 - [Circuit Youth](http://circuityouth.org)
 - [Talent Maker City](http://talentmakercity.org)

@@ -1,5 +1,4 @@
 ---
 layout: default
-showmenu: true
 ---
 {{ include featured-projects.html all=true }}

@@ -1,12 +1,5 @@
-baseURL: "https://k7mfr.org/"
+# Site settings
+title: Rogue Hack Lab
+baseURL: "https://roguehacklab.org/"
 languageCode: "en-us"
-title: "Rogue Valley Amateur Radio Club"
-author: "K7RVM"
-googleAnalytics: UA-147251318-1
-
-menu:
-  main:
-  - identifier: "Club Info"
-    name: "Club Info"
-    url: /
-    weight: 1
+googleAnalytics: UA-50519192-2

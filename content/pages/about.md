@@ -1,7 +1,8 @@
 ---
 layout: page
 title: About
-showmenu: true
+menu:
+  main:
 ---
 
 ## What is the maker community?

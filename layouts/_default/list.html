@@ -1,11 +1,10 @@
 {{ define "main" }}
-<main class="w3-padding">
+<main class="container">
 	<article>
 		{{ if or .Title .Content }}
 		{{ with .Title | humanize }}
-		<div style="margin-top:60px" id="showcase">
+		<div >
 			<h1><b>{{ . }}</b></h1>
-			<hr style="width:200px;border:5px solid green" class="w3-round">
 		</div>
 		{{ end }}
 		{{ with .Content }}

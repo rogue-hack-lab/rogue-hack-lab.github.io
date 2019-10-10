@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Events
-showmenu: true
+menu:
+  main:
 ---
 
 ## Large Events we paticipate in
@@ -11,4 +12,4 @@ showmenu: true
 
 ## Upcoming events on
 
-{{ include meetup.html }}
+<a href="https://www.meetup.com/Rogue-Hack-Lab/">RogueHackLab Meetup</a>

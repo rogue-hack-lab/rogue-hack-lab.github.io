@@ -1,25 +1,26 @@
 # New RHL Website
 
-This is the future RHL Website.
+This is the RHL Website.
 
 ## Running the site locally
 
-In order to compile the assets and run Jekyll on local you need to follow those steps:
+hugo...
 
-- Install [Ruby](https://www.ruby-lang.org)
-- Install [Jekyll](http://jekyllrb.com)
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install`
-- linux: Run `sudo npm install -g gulp-cli`
-- windows: Run `npm install -g gulp-cli`
-- Run `gulp`
+### General Content Updates
+
+add or remove contented in the content folder
+
+### Style Updates
 
 To edit css/js edit the files in `src` that are compiled with `gulp`.
 
+### Functions
+
+https://www.netlify.com/docs/functions/#tools-for-building-javascript-functions
 
 ## Credits
 
-This theme was partially designed with the inspiration from these fine folks
+This theme was partially designed with the inspiration from
 - [Nathan Randecker](https://github.com/nrandecker/particle)
 - [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
 - [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)

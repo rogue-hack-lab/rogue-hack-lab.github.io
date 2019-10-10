@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-<head>
-	{{ partial "header" . }}
-</head>
+{{ partial "head" . }}
 <body>
-	{{ partial "sidebar" . }}
-	<div class="w3-main" style="margin-left:340px;margin-right:40px">
-        <h1>Page not found...</h1>
-        <p>Time to QSY to a new page</p>
+	{{ partial "header" . }}
+	<div id="panel">
+		<main class="container">
+		<h1>404 not found :(</h1>
+		</main>
 	</div>
 	{{ partial "footer" . }}
+	{{ partial "scripts" . }}
 </body>
 </html>
