@@ -1,7 +1,7 @@
 ---
 # site organizational properties. don't change this
 layout: project
-featured: false
+featured: true
 sort-order: 30
 
 # modify these to be specific to your project

@@ -15,9 +15,12 @@ hackers: [Patrick Cunningham, Mica Cardillo, Kevin Conner]
 keywords: [Javascript, Web Design, Game Design]
 thumbnail: feature-photo.jpg
 link: http://pixual.io
-
 ---
-Created as part of the [Global Game Jam](http://www.globalgamejam.org/) 2016 the game is simple: Given two nearly identical square grids of pixels, the player must determine which single pixel is not identical between grids. 
+
+Created as part of the [Global Game Jam](http://www.globalgamejam.org/) 2016 the game is simple: Given two nearly identical square grids of pixels, the player must determine which single pixel is not identical between grids.
+
+![The Game](./high_score.png)
+
 
 <!-- more -->
 
