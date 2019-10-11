@@ -5,6 +5,8 @@ menu:
   main:
 ---
 
+{{< meetup >}}
+
 ## Large Events we paticipate in
 
 - [Rogue Valley Mini Maker Faire](http://roguevalley.makerfaire.com)
