@@ -7,3 +7,6 @@ Gemfile.lock
 .jekyll-cache/
 _gen
 functions-build/
+public/
+
+.vscode
