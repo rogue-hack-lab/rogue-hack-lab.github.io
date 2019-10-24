@@ -39,4 +39,4 @@ A Meetup script would also fetch meetup events and public them to the display.
 The second iteration of the sign switched to using a [Particle.io](http://particle.io) micro controller that will connect to wifi and accept published messaged through the particle cloud.
 
 ## Source
-More info about this project and source code can be found in the [github project]({{ link }}).
+More info about this project and source code can be found in the [github project](https://github.com/rogue-hack-lab/translux).
