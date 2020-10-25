@@ -13,7 +13,7 @@ hackers: [Luke Bryan]
 # date: "02/29/2020"
 abstract: A ham radio project to listen for a call sign (experimental), and an offline repeaterbook-style app with a map, topo view and repeater listing.
 keywords: [Radio, Repeater, Repeaterbook]
-#thumbnail: ./.png
+thumbnail: repeaterstart.png
 link: hearham.com/
 
 ---

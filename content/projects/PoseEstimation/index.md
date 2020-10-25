@@ -13,7 +13,7 @@ hackers: [Luke Bryan]
 # date: "10/17/2020"
 abstract: Body pose estimation experiment
 keywords: [Computer Vision]
-#thumbnail: ./.png
+thumbnail: pose.png
 link: https://howtotrainyourrobot.com/human-pose-estimation-with-python-and-gluoncv/
 
 ---

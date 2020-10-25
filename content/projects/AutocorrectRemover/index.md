@@ -13,7 +13,7 @@ hackers: [Luke Bryan]
 # date: "09/07/2020"
 abstract: An autocorrect remover for web based word processing.
 keywords: [Google Docs, Google, Chrome, Autocorrect]
-#thumbnail: ./.png
+thumbnail: Autocorrectremover.png.png
 link: https://devpost.com/software/autocorrect-remover
 
 ---
