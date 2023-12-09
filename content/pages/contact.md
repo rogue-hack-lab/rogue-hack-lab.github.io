@@ -5,7 +5,7 @@ menu:
   main:
 ---
 
-{{< slack >}}
+{{< discord >}}
 
 ## Social Media
 

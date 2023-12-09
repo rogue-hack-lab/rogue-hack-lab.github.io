@@ -19,7 +19,7 @@ showmenu: true
         {{< meetup >}}
       </div>
       <div class="six columns">
-        {{< slack >}}
+        {{< discord >}}
       </div>
     </div>
   </div>
