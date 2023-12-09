@@ -14,6 +14,12 @@ fetch(myRequest)
   .then(response => response.json())
   .then(data => {
     console.log(data);
+
+    if (data.length === 0) {
+      let listItem = document.createElement('li');
+      listItem.innerHTML = `No upcoming events`;
+      myList.appendChild(listItem);
+    }
     
     for (const event of data) {
       let listItem = document.createElement('li');
